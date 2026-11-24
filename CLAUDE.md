@@ -13,7 +13,7 @@ conda activate iris_nn
 python main.py                            # run from repo root: DATA_CSV/RESULTS_DIR are relative paths
 ```
 
-Results go to `results_lif/`. There is no test suite, linter, or build step. Correctness checks are `assert`s inside the pipeline (fold stratification, prediction counts, best fitness == fitness of the rebuilt neuron).
+Results go to `resultados_fitness_<FITNESS>/` (branch `fitness-separacion`; `main` writes `resultados/` with eq. 5). There is no test suite, linter, or build step. Correctness checks are `assert`s inside the pipeline (fold stratification, prediction counts, best fitness == fitness of the rebuilt neuron).
 
 ## What this project is
 
@@ -25,7 +25,11 @@ Variable names follow the notes on purpose (`x`, `w`, `I`, `theta`, `a`, `b`, `c
 
 - `config.py`: protocol constants, `LIFConfig` (`theta, a, b, c, h, V_th, V_0, t`) and `DEConfig` (`NP, dimension, F, CR, generaciones`), search bounds `[0, 1]`.
 - `lif.py`: the neuron only. `input_current` (eq. 4, `I = x̄·w̄·θ`, an elementwise product+sum so a row's `I` doesn't depend on batch size), `F`, `euler_step` (`V_{i+1} = V_i + h F(t_i, V_i)`), `simulate` (explicit Euler loop over `t/h = 1000` steps, reset to `c` when `V_{i+1} ≥ V_th`, optional `V` trace), `firing_rate`, `class_firing_rates` (`AFR`, population-std `SDFR`), `classify` (eq. 3), and the `LIFNeuron` dataclass (`w`, `AFR`, `SDFR`, `cfg`). Every function accepts any shape of `I`, so the whole population × pattern grid (`NP×N`) is simulated at once.
-- `fitness.py`: eq. 5, `F_i = 1/distancia(AFR) + Σ SDFR_k` (sum of pairwise `|AFR_k − AFR_l|`), and `fitness_population` (`(NP×n) -> (NP,)`), the DE objective.
+- `fitness.py`: the DE objective `fitness_population` (`(NP×n) -> (NP,)`), chosen by `config.FITNESS`:
+  - `"ec5"`: the paper's eq. 5, `F_i = 1/distancia(AFR) + Σ SDFR_k`. Weak: on a line the pairwise sum equals `2·(max − min)`, so the middle class cancels out, and `1/distancia ≈ 63` swamps `Σ SDFR ≈ 0.003`.
+  - `"fisher"` (default on this branch): `1 / min J_kl`, with `J_kl = |AFR_k − AFR_l| / (SDFR_k + SDFR_l + ε)` over classes adjacent after sorting the AFRs, and `ε = 1/t` (one spike) so equal spike counts don't divide by zero. Unit-free.
+  - `"error"`: training error of the `argmin |AFR_k − F_r|` rule plus `LAMBDA_FITNESS · (1/min J_kl)` to break the ties between equal error counts.
+  `training.py` checks the DE's best fitness against `fitness_population` on `W̄` alone, so it holds for every option.
 - `algorithm/`: generic DE/rand/1/bin, a PyTorch port of `../de-algorithm/algorithm` (don't edit that project from here). It knows nothing about the neuron: it takes an objective `(P×d) -> (P,)`. Mutation `x_r1 + F(x_r2 − x_r3)`, binomial crossover with one forced mutant component, `repair_bounds` clipping of every trial (as in the original; without it the weights leave `[0, 1]` and the neuron saturates into a degenerate `AFR = [0, 1, 1]`), greedy selection `f(x_t) ≤ f(x_i)`. Each generation is vectorized, runs exactly `generaciones` generations (no early stop), and `best_fitness` stays a 0-d device tensor until `run()` ends.
 - `training.py`: glue between the two. `train_subexperiment` runs DE on the training fold and returns `LIFNeuron.fit(W, ...)` (AFR/SDFR from the training fold), the best `F_i` per generation (`generaciones + 1` entries, generation 0 = initial population) and the `OptimizationResult`. `test_fitness_history` computes `F_i` on the test fold for each generation's best `w̄` after the run (only unique vectors are simulated); test data never drives training.
 - `experiment.py`: protocol (`create_two_folds`, `check_folds`, `evaluate`, `run_subexperiment`, `run_experiment`). `main.py`: loop over experiments, logging, best model.

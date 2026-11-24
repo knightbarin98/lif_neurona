@@ -6,7 +6,7 @@ import torch
 
 from algorithm import DifferentialEvolution, OptimizationResult
 from config import DE_CONFIG, DE_LOWER_BOUND, DE_UPPER_BOUND, LIF_CONFIG, DEConfig, LIFConfig
-from fitness import fitness, fitness_population
+from fitness import fitness_population
 from lif import LIFNeuron
 
 # Etapa de entrenamiento: une el modelo LIF (lif.py, fitness.py) con la evolución diferencial (algorithm/).
@@ -31,8 +31,8 @@ def train_subexperiment(x_train: torch.Tensor, y_train: torch.Tensor, seed: int,
     W = result.best_position                                            # W̄: pesos optimizados (n,)
     neuron = LIFNeuron.fit(W, x_train, y_train, lif_config)
 
-    # el fitness del mejor vector debe coincidir con el de la neurona construida con W̄
-    F_i = float(fitness(neuron.AFR, neuron.SDFR))
+    # el fitness del mejor vector, recalculado con W̄ solo, debe coincidir con el que registró el DE
+    F_i = float(fitness_population(x_train, y_train, W[None, :], lif_config)[0])
     assert math.isclose(F_i, result.best_fitness, rel_tol=1e-5), (F_i, result.best_fitness)
     return neuron, result.fitness_history, result
 

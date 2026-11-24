@@ -36,7 +36,7 @@ class LIFConfig:
 
 LIF_CONFIG: LIFConfig = LIFConfig()
 
-# los vectores de pesos w̄ se inicializan y se buscan en [0, 1] (distribución uniforme)
+# los vectores de pesos w̄ se inicializan y se buscan en [-1, 1] (distribución uniforme)
 DE_LOWER_BOUND: float = -1.0
 DE_UPPER_BOUND: float = 1.0
 
@@ -53,8 +53,15 @@ class DEConfig:
 
 DE_CONFIG: DEConfig = DEConfig()
 
+# función fitness que minimiza el DE (fitness.py):
+#   "ec5"    ec. 5 del artículo: 1/distancia(AFR) + Σ SDFR_k
+#   "fisher" 1 / min J_kl, J_kl = |AFR_k − AFR_l| / (SDFR_k + SDFR_l + ε) entre clases vecinas
+#   "error"  error de entrenamiento + LAMBDA_FITNESS · (1 / min J_kl) para desempatar
+FITNESS: str = "fisher"
+LAMBDA_FITNESS: float = 0.001
+
 DATA_CSV: str = "iris.csv"
-RESULTS_DIR: str = "resultados"
+RESULTS_DIR: str = f"resultados_fitness_{FITNESS}"     # main usa "resultados" (ec. 5)
 SAVE_SUBEXPERIMENT_PLOTS: bool = True
 
 CLASS_NAMES: list[str] = ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]
