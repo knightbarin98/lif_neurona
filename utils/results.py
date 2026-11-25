@@ -5,7 +5,8 @@ from dataclasses import asdict
 
 import torch
 
-from config import CLASS_NAMES, DE_CONFIG, FITNESS, LAMBDA_FITNESS, LIF_CONFIG, RESULTS_DIR, SAVE_SUBEXPERIMENT_PLOTS
+from config import CLASS_NAMES, DE_CONFIG, LIF_CONFIG, RESULTS_DIR, SAVE_SUBEXPERIMENT_PLOTS
+from fitness import FITNESS_FORMULA
 from .logging_utils import write_confusion_csv, write_csv, write_generations_csv, write_json
 from .metrics import class_counts, classification_metrics
 from .statistics import describe
@@ -29,8 +30,7 @@ def subexperiment_summary(sub: dict, y_idx: torch.Tensor) -> dict:
         "lif": asdict(LIF_CONFIG),
         "training": {
             "de_strategy": "DE/rand/1/bin",
-            "fitness": FITNESS,
-            "lambda_fitness": LAMBDA_FITNESS if FITNESS == "error" else None,
+            "fitness": FITNESS_FORMULA,
             "de_config": asdict(DE_CONFIG),
             "generations_executed": sub["generations_executed"],     # generación 0 ... generaciones
             "initial_training_fitness": fitness_history[0],

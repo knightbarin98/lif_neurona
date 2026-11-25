@@ -7,7 +7,7 @@ import torch
 from algorithm import DifferentialEvolution, OptimizationResult
 from config import DE_CONFIG, DE_LOWER_BOUND, DE_UPPER_BOUND, LIF_CONFIG, DEConfig, LIFConfig
 from fitness import fitness_population
-from lif import LIFNeuron
+from lif import LIFNeuron, contar_disparos, input_current, simulate
 
 # Etapa de entrenamiento: une el modelo LIF (lif.py, fitness.py) con la evolución diferencial (algorithm/).
 # El DE solo ve una función objetivo (NP×n) -> (NP,); no sabe nada de la neurona.
@@ -17,7 +17,7 @@ def train_subexperiment(x_train: torch.Tensor, y_train: torch.Tensor, seed: int,
                         de_config: DEConfig = DE_CONFIG,
                         lif_config: LIFConfig = LIF_CONFIG) -> tuple[LIFNeuron, list[float], OptimizationResult]:
     """
-        Calibra w̄ con DE/rand/1/bin desde una población nueva (`seed`) de NP vectores en [0, 1].
+        Calibra w̄ con DE/rand/1/bin desde una población nueva (`seed`) de NP vectores en [0, 1] (después los pesos quedan libres).
         Devuelve la neurona LIF (W̄ optimizado + AFR, SDFR de entrenamiento), el mejor F_i por generación
         (generación 0 = población inicial ... generaciones) y el OptimizationResult del DE.
     """
@@ -34,6 +34,10 @@ def train_subexperiment(x_train: torch.Tensor, y_train: torch.Tensor, seed: int,
     # el fitness del mejor vector, recalculado con W̄ solo, debe coincidir con el que registró el DE
     F_i = float(fitness_population(x_train, y_train, W[None, :], lif_config)[0])
     assert math.isclose(F_i, result.best_fitness, rel_tol=1e-5), (F_i, result.best_fitness)
+
+    # el conteo rápido de disparos debe coincidir con el ciclo de Euler paso a paso
+    I = input_current(x_train, W, lif_config.theta)
+    assert torch.equal(contar_disparos(I, lif_config), simulate(I, lif_config)[0]), "conteo rápido ≠ Euler"
     return neuron, result.fitness_history, result
 
 

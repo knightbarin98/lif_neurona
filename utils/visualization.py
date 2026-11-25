@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt  # noqa: E402
 import torch  # noqa: E402
 from matplotlib.colors import LinearSegmentedColormap  # noqa: E402
 
-from config import CLASS_NAMES, FITNESS, LIF_CONFIG, LIFConfig  # noqa: E402
-from fitness import FITNESS_FORMULAS  # noqa: E402
+from config import CLASS_NAMES, LIF_CONFIG, LIFConfig  # noqa: E402
+from fitness import FITNESS_FORMULA  # noqa: E402
 from lif import LIFNeuron  # noqa: E402
 
 # Paleta categórica (primeros 3 espacios validados para daltonismo entre sí)
@@ -25,7 +25,7 @@ N_CLASSES = 3
 ITERATION_LABEL = "Generación"
 ITERATIONS_LABEL = "Generaciones"
 TRAINER_LABEL = "DE"
-FITNESS_LABEL = FITNESS_FORMULAS[FITNESS]
+FITNESS_LABEL = FITNESS_FORMULA
 SAMPLE_LABEL = "Muestra del conjunto de prueba (en el orden del fold: agrupadas por clase)"
 
 plt.rcParams.update({

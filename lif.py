@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from functools import lru_cache
 
 import torch
 
@@ -55,10 +56,51 @@ def simulate(I: torch.Tensor, cfg: LIFConfig = LIF_CONFIG,
     return disparos, V
 
 
+# Conteo rápido: con I constante no hace falta recorrer los t/h pasos por neurona.
+# Antes del primer disparo, la recurrencia de Euler V_{n+1} = q V_n + h (I + a), con q = 1 − h b, da
+#     V_n = A_n I + B_n,   A_{n+1} = q A_n + h,   B_{n+1} = q B_n + h a,   A_0 = 0,   B_0 = V de arranque
+# y la neurona ya disparó en el paso n si V_n ≥ V_th  <=>  I ≥ I_min(n) = (V_th − B_n) / A_n.
+# A_n y B_n no dependen de x̄ ni de w̄: las tablas I_min se calculan una sola vez para todas las neuronas.
+# Tras cada disparo V = c y, como I no cambia, todos los intervalos siguientes duran lo mismo.
+
+
+@lru_cache(maxsize=None)
+def umbrales_de_corriente(V_inicio: float, cfg: LIFConfig = LIF_CONFIG,
+                          device: torch.device | None = None) -> torch.Tensor:
+    """I_min(n) para n = 1, ..., t/h: corriente mínima para alcanzar V_th en el paso n arrancando en V_inicio."""
+    q = 1.0 - cfg.h * cfg.b
+    A_n, B_n = 0.0, float(V_inicio)
+    I_min = []
+    for _ in range(simulation_steps(cfg)):
+        A_n = q * A_n + cfg.h
+        B_n = q * B_n + cfg.h * cfg.a
+        I_min.append((cfg.V_th - B_n) / A_n)
+    I_min = torch.tensor(I_min, dtype=torch.float64, device=device)      # (pasos,)   ej. (3000,)
+    if not bool((I_min[1:] < I_min[:-1]).all()):
+        raise ValueError("El conteo rápido requiere I_min(n) estrictamente decreciente con estos parámetros LIF")
+    return I_min
+
+
+def contar_disparos(I: torch.Tensor, cfg: LIFConfig = LIF_CONFIG) -> torch.Tensor:
+    """
+        Total de disparos en t ms (misma forma que I), igual que simulate pero sin el ciclo de Euler.
+        t_1: paso del primer disparo (arranca en V_0); T_p: pasos entre disparos (arranca en c).
+        disparos = 1 + ⌊(N − t_1) / T_p⌋ si t_1 ≤ N, si no 0, con N = t/h.
+    """
+    N = simulation_steps(cfg)
+    I_min_inicio = umbrales_de_corriente(cfg.V_0, cfg, I.device)          # desde V_0 = −60
+    I_min_reinicio = umbrales_de_corriente(cfg.c, cfg, I.device)          # desde c = −50
+    menos_I = -I.to(torch.float64)
+    # primer n con I ≥ I_min(n): búsqueda binaria en −I_min, que es creciente
+    t_1 = torch.searchsorted(-I_min_inicio, menos_I) + 1                   # (forma de I), N + 1 = nunca dispara
+    T_p = torch.searchsorted(-I_min_reinicio, menos_I) + 1
+    disparos = torch.where(t_1 <= N, 1 + (N - t_1.clamp(max=N)) // T_p, torch.zeros_like(t_1))
+    return disparos.to(I.dtype)
+
+
 def firing_rate(I: torch.Tensor, cfg: LIFConfig = LIF_CONFIG) -> torch.Tensor:
     """FR = total de disparos / tiempo de simulación (disparos por ms)."""
-    disparos, _ = simulate(I, cfg)
-    return disparos / cfg.t
+    return contar_disparos(I, cfg) / cfg.t
 
 
 def class_firing_rates(FR: torch.Tensor, y_idx: torch.Tensor,

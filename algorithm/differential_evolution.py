@@ -133,7 +133,7 @@ class DifferentialEvolution:
         while not self.should_stop():
             # los P trials se generan con la población de la generación t y se evalúan juntos
             x_mutant = self.mutation(x_i_index)
-            x_t = self.repair_bounds(self.crossover(self.population, x_mutant))
+            x_t = self.crossover(self.population, x_mutant)       # sin repair_bounds: pesos libres tras inicializar
             x_t_fitness = self.evaluate_population(x_t)
             next_population, next_fitness = self.selection(self.population, self.fitness, x_t, x_t_fitness)
 

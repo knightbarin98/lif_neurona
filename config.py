@@ -31,13 +31,13 @@ class LIFConfig:
     h: float = 1.0              # incremento de tiempo del método de Euler (ms)
     V_th: float = 50.0          # voltaje de umbral
     V_0: float = -60.0          # V_{i=0}: voltaje inicial en t = 0
-    t: float = 1000.0           # tiempo de simulación (ms)
+    t: float = 3000.0           # tiempo de simulación (ms)
 
 
 LIF_CONFIG: LIFConfig = LIFConfig()
 
-# los vectores de pesos w̄ se inicializan y se buscan en [-1, 1] (distribución uniforme)
-DE_LOWER_BOUND: float = -1.0
+# los vectores de pesos w̄ se inicializan con distribución uniforme en [0, 1]; el DE no los recorta después (pesos libres)
+DE_LOWER_BOUND: float = 0.0
 DE_UPPER_BOUND: float = 1.0
 
 
@@ -46,22 +46,15 @@ DE_UPPER_BOUND: float = 1.0
 class DEConfig:
     NP: int = 60                        # tamaño de población: 60 vectores de pesos
     dimension: int = INPUT_FEATURE      # 4 características de Iris Plant
-    F: float = 0.9
-    CR: float = 0.8
+    F: float = 0.4
+    CR: float = 0.3
     generaciones: int = 1000            # notas: 10000; el fitness se estanca hacia la generación 20 (artículo: 1000)
 
 
 DE_CONFIG: DEConfig = DEConfig()
 
-# función fitness que minimiza el DE (fitness.py):
-#   "ec5"    ec. 5 del artículo: 1/distancia(AFR) + Σ SDFR_k
-#   "fisher" 1 / min J_kl, J_kl = |AFR_k − AFR_l| / (SDFR_k + SDFR_l + ε) entre clases vecinas
-#   "error"  error de entrenamiento + LAMBDA_FITNESS · (1 / min J_kl) para desempatar
-FITNESS: str = "fisher"
-LAMBDA_FITNESS: float = 0.001
-
 DATA_CSV: str = "iris.csv"
-RESULTS_DIR: str = f"resultados_fitness_{FITNESS}"     # main usa "resultados" (ec. 5)
+RESULTS_DIR: str = "resultados_conteo_rapido"      # corrida previa con Euler paso a paso: resultados_new_config_ec5
 SAVE_SUBEXPERIMENT_PLOTS: bool = True
 
 CLASS_NAMES: list[str] = ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]
