@@ -1,0 +1,105 @@
+{
+  "experiment_id": 9,
+  "experiment_seed": 51,
+  "test_accuracy_A_to_B": 0.96,
+  "test_accuracy_B_to_A": 0.96,
+  "test_accuracy_mean": 0.96,
+  "test_accuracy_aggregated": 0.96,
+  "test_accuracy_statistics": {
+    "n": 2,
+    "min": 0.96,
+    "max": 0.96,
+    "mean": 0.96,
+    "median": 0.96,
+    "mode": 0.96,
+    "mode_count": 2,
+    "n_distinct_values": 1,
+    "mode_is_informative": true,
+    "mode_rounded": 0.96,
+    "mode_rounded_count": 2,
+    "mode_round_decimals": 6,
+    "std": 0.0,
+    "std_sample": 0.0,
+    "std_population": 0.0
+  },
+  "train_accuracy": {
+    "A_to_B": 0.9599999785423279,
+    "B_to_A": 0.9866666793823242
+  },
+  "train_fitness_statistics": {
+    "n": 2002,
+    "min": 1.0452057123184204,
+    "max": 83.8947982788086,
+    "mean": 5.4018444253371785,
+    "median": 1.6982988119125366,
+    "mode": 1.0577788352966309,
+    "mode_count": 231,
+    "n_distinct_values": 792,
+    "mode_is_informative": true,
+    "mode_rounded": 1.057779,
+    "mode_rounded_count": 231,
+    "mode_round_decimals": 6,
+    "std": 9.476719551315066,
+    "std_sample": 9.479087251427291,
+    "std_population": 9.476719551315066
+  },
+  "test_fitness_statistics": {
+    "n": 2002,
+    "min": 1.0578311681747437,
+    "max": 84.84429168701172,
+    "mean": 5.445499272375078,
+    "median": 1.710956871509552,
+    "mode": 1.0821747779846191,
+    "mode_count": 231,
+    "n_distinct_values": 778,
+    "mode_is_informative": true,
+    "mode_rounded": 1.082175,
+    "mode_rounded_count": 231,
+    "mode_round_decimals": 6,
+    "std": 9.537670474865948,
+    "std_sample": 9.540053403191667,
+    "std_population": 9.537670474865948
+  },
+  "aggregated_confusion_matrix_test": [
+    [
+      50,
+      0,
+      0
+    ],
+    [
+      0,
+      44,
+      6
+    ],
+    [
+      0,
+      0,
+      50
+    ]
+  ],
+  "aggregated_metrics_test": {
+    "accuracy": 0.96,
+    "precision_per_class": [
+      1.0,
+      1.0,
+      0.8928571428571429
+    ],
+    "recall_per_class": [
+      1.0,
+      0.88,
+      1.0
+    ],
+    "f1_per_class": [
+      1.0,
+      0.9361702127659575,
+      0.9433962264150945
+    ],
+    "macro_precision": 0.9642857142857143,
+    "macro_recall": 0.96,
+    "macro_f1": 0.9598554797270173
+  },
+  "generations": {
+    "A_to_B": 1001,
+    "B_to_A": 1001
+  }
+}
