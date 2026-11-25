@@ -1,0 +1,133 @@
+{
+  "seed": 57,
+  "train_class_counts": [
+    25,
+    25,
+    25
+  ],
+  "test_class_counts": [
+    25,
+    25,
+    25
+  ],
+  "lif": {
+    "theta": 0.1,
+    "a": 0.5,
+    "b": -0.001,
+    "c": -50.0,
+    "h": 1.0,
+    "V_th": 50.0,
+    "V_0": -60.0,
+    "t": 1000.0
+  },
+  "training": {
+    "de_strategy": "DE/rand/1/bin",
+    "fitness": "fisher",
+    "lambda_fitness": null,
+    "de_config": {
+      "NP": 60,
+      "dimension": 4,
+      "F": 0.9,
+      "CR": 0.8,
+      "generaciones": 1000
+    },
+    "generations_executed": 1001,
+    "initial_training_fitness": 1.1781114339828491,
+    "final_training_fitness": 0.8630446791648865,
+    "cumulative_training_fitness": 871.35338306427,
+    "mean_training_fitness": 0.8704829001641059,
+    "train_accuracy": 1.0,
+    "w_final": [
+      0.2409069687128067,
+      0.6239739060401917,
+      -1.0,
+      -1.0
+    ],
+    "AFR": [
+      0.006039998959749937,
+      0.0021200000774115324,
+      0.00016000001050997525
+    ],
+    "SDFR": [
+      0.00034409292857162654,
+      0.0003249614965170622,
+      0.0003666060802061111
+    ]
+  },
+  "final": {
+    "test_accuracy": 0.9333333373069763,
+    "test_fitness": 1.1400974988937378
+  },
+  "confusion_matrix_test": [
+    [
+      25,
+      0,
+      0
+    ],
+    [
+      0,
+      20,
+      5
+    ],
+    [
+      0,
+      0,
+      25
+    ]
+  ],
+  "metrics_test": {
+    "accuracy": 0.9333333333333333,
+    "precision_per_class": [
+      1.0,
+      1.0,
+      0.8333333333333334
+    ],
+    "recall_per_class": [
+      1.0,
+      0.8,
+      1.0
+    ],
+    "f1_per_class": [
+      1.0,
+      0.888888888888889,
+      0.9090909090909091
+    ],
+    "macro_precision": 0.9444444444444445,
+    "macro_recall": 0.9333333333333332,
+    "macro_f1": 0.9326599326599326
+  },
+  "train_fitness_statistics": {
+    "n": 1001,
+    "min": 0.8630446791648865,
+    "max": 1.1781114339828491,
+    "mean": 0.8704829001641059,
+    "median": 0.8630446791648865,
+    "mode": 0.8630446791648865,
+    "mode_count": 904,
+    "n_distinct_values": 12,
+    "mode_is_informative": true,
+    "mode_rounded": 0.863045,
+    "mode_rounded_count": 904,
+    "mode_round_decimals": 6,
+    "std": 0.030035769488121474,
+    "std_sample": 0.03005078362027041,
+    "std_population": 0.030035769488121474
+  },
+  "test_fitness_statistics": {
+    "n": 1001,
+    "min": 1.1400974988937378,
+    "max": 1.8039268255233765,
+    "mean": 1.160240138922776,
+    "median": 1.1400974988937378,
+    "mode": 1.1400974988937378,
+    "mode_count": 910,
+    "n_distinct_values": 11,
+    "mode_is_informative": true,
+    "mode_rounded": 1.140097,
+    "mode_rounded_count": 910,
+    "mode_round_decimals": 6,
+    "std": 0.07679485850014628,
+    "std_sample": 0.07683324633483572,
+    "std_population": 0.07679485850014628
+  }
+}

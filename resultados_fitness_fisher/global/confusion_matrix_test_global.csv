@@ -1,0 +1,4 @@
+real \ predicha,pred_Iris-setosa,pred_Iris-versicolor,pred_Iris-virginica
+real_Iris-setosa,1750,0,0
+real_Iris-versicolor,12,1529,209
+real_Iris-virginica,0,170,1580

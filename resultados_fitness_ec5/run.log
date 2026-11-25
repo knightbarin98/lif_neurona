@@ -1,0 +1,256 @@
+22:37:58 [INFO] Iris cargado: 150 muestras, device=cpu
+22:41:06 [INFO] exp 01 sub 1 | generaciones=1001 | final_F=61.639400 cum=61748.34 mean=61.686652 | AFR=[0.0082,0.0137,0.0163] SDFR=[0.0004,0.0009,0.0011] | train_acc=0.9600 acc=0.8800 macroP=0.8981 | P[set,ver,vir]=[1.000,0.750,0.944]
+22:41:06 [INFO] exp 01 sub 1 | train_fitness media=61.6867 mediana=61.6394 std=0.919514 | test_fitness media=66.4635 mediana=66.421 std=1.043
+22:41:06 [INFO] exp 01 sub 1 | resultado DE: best_fitness=61.63940048 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.956503, 1.000000, 1.000000]
+22:41:06 [INFO] exp 01 sub 2 | generaciones=1001 | final_F=66.069962 cum=66185.63 mean=66.119507 | AFR=[0.0082,0.0135,0.0157] SDFR=[0.0004,0.0009,0.0010] | train_acc=0.9200 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.952,0.828]
+22:41:06 [INFO] exp 01 sub 2 | train_fitness media=66.1195 mediana=66.07 std=1.05816 | test_fitness media=62.0465 mediana=62.0064 std=0.90239
+22:41:06 [INFO] exp 01 sub 2 | resultado DE: best_fitness=66.06996155 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.985929, 1.000000, 1.000000]
+22:41:07 [INFO] == experimento 01 | accuracy OOF=0.9000 | train_fitness media=63.9031 mediana=66.07 std=2.42799 | test_fitness media=64.255 mediana=66.1399 std=2.41422
+22:44:14 [INFO] exp 02 sub 1 | generaciones=1001 | final_F=62.690701 cum=62792.33 mean=62.729602 | AFR=[0.0082,0.0134,0.0161] SDFR=[0.0003,0.0010,0.0013] | train_acc=0.9067 acc=0.9467 macroP=0.9467 | P[set,ver,vir]=[1.000,0.920,0.920]
+22:44:14 [INFO] exp 02 sub 1 | train_fitness media=62.7296 mediana=62.6907 std=0.756091 | test_fitness media=65.7683 mediana=65.7223 std=0.920598
+22:44:14 [INFO] exp 02 sub 1 | resultado DE: best_fitness=62.69070053 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -1.000000, 0.997730, 1.000000]
+22:44:14 [INFO] exp 02 sub 2 | generaciones=1001 | final_F=64.836014 cum=64953.25 mean=64.888360 | AFR=[0.0080,0.0136,0.0157] SDFR=[0.0004,0.0007,0.0009] | train_acc=0.9467 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.875,0.846]
+22:44:14 [INFO] exp 02 sub 2 | train_fitness media=64.8884 mediana=64.836 std=0.916853 | test_fitness media=62.5485 mediana=62.5026 std=0.779143
+22:44:14 [INFO] exp 02 sub 2 | resultado DE: best_fitness=64.83601379 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.990654, -0.996046, 1.000000, 1.000000]
+22:44:15 [INFO] == experimento 02 | accuracy OOF=0.9267 | train_fitness media=63.809 mediana=64.836 std=1.36792 | test_fitness media=64.1584 mediana=65.6533 std=1.82182
+22:47:21 [INFO] exp 03 sub 1 | generaciones=1001 | final_F=63.006313 cum=63163.94 mean=63.100840 | AFR=[0.0083,0.0135,0.0162] SDFR=[0.0004,0.0010,0.0009] | train_acc=0.9467 acc=0.9200 macroP=0.9216 | P[set,ver,vir]=[1.000,0.852,0.913]
+22:47:21 [INFO] exp 03 sub 1 | train_fitness media=63.1008 mediana=63.0063 std=1.60549 | test_fitness media=64.9254 mediana=64.8364 std=1.52115
+22:47:21 [INFO] exp 03 sub 1 | resultado DE: best_fitness=63.00631332 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.953271, 1.000000, 1.000000]
+22:47:21 [INFO] exp 03 sub 2 | generaciones=1001 | final_F=64.635315 cum=64787.19 mean=64.722472 | AFR=[0.0081,0.0137,0.0158] SDFR=[0.0004,0.0008,0.0013] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.917,0.885]
+22:47:21 [INFO] exp 03 sub 2 | train_fitness media=64.7225 mediana=64.6353 std=1.53089 | test_fitness media=63.5414 mediana=63.454 std=1.58018
+22:47:21 [INFO] exp 03 sub 2 | resultado DE: best_fitness=64.63531494 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.993046, 1.000000, 1.000000]
+22:47:22 [INFO] == experimento 03 | accuracy OOF=0.9267 | train_fitness media=63.9117 mediana=64.6353 std=1.76579 | test_fitness media=64.2334 mediana=64.7022 std=1.69833
+22:50:29 [INFO] exp 04 sub 1 | generaciones=1001 | final_F=63.325474 cum=63452.25 mean=63.388856 | AFR=[0.0080,0.0135,0.0159] SDFR=[0.0003,0.0008,0.0011] | train_acc=0.9467 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.875,0.846]
+22:50:29 [INFO] exp 04 sub 1 | train_fitness media=63.3889 mediana=63.3255 std=0.945649 | test_fitness media=63.9664 mediana=63.9084 std=0.932632
+22:50:29 [INFO] exp 04 sub 1 | resultado DE: best_fitness=63.32547379 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994698, -1.000000, 1.000000, 1.000000]
+22:50:29 [INFO] exp 04 sub 2 | generaciones=1001 | final_F=63.712910 cum=63837.83 mean=63.774054 | AFR=[0.0081,0.0135,0.0160] SDFR=[0.0004,0.0009,0.0011] | train_acc=0.9067 acc=0.9467 macroP=0.9467 | P[set,ver,vir]=[1.000,0.920,0.920]
+22:50:29 [INFO] exp 04 sub 2 | train_fitness media=63.7741 mediana=63.7129 std=0.941315 | test_fitness media=63.6442 mediana=63.5831 std=0.940354
+22:50:29 [INFO] exp 04 sub 2 | resultado DE: best_fitness=63.7129097 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.990912, -0.998943, 1.000000, 1.000000]
+22:50:30 [INFO] == experimento 04 | accuracy OOF=0.9267 | train_fitness media=63.5815 mediana=63.7129 std=0.962942 | test_fitness media=63.8053 mediana=63.9084 std=0.950258
+22:53:36 [INFO] exp 05 sub 1 | generaciones=1001 | final_F=63.583294 cum=63700.59 mean=63.636950 | AFR=[0.0082,0.0137,0.0160] SDFR=[0.0004,0.0009,0.0012] | train_acc=0.9200 acc=0.9067 macroP=0.9102 | P[set,ver,vir]=[1.000,0.821,0.909]
+22:53:36 [INFO] exp 05 sub 1 | train_fitness media=63.6369 mediana=63.5833 std=1.05811 | test_fitness media=64.3589 mediana=64.3027 std=1.06972
+22:53:36 [INFO] exp 05 sub 1 | resultado DE: best_fitness=63.58329391 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.984797, 1.000000, 1.000000]
+22:53:36 [INFO] exp 05 sub 2 | generaciones=1001 | final_F=63.777782 cum=63903.40 mean=63.839559 | AFR=[0.0080,0.0134,0.0158] SDFR=[0.0003,0.0009,0.0011] | train_acc=0.9333 acc=0.9200 macroP=0.9200 | P[set,ver,vir]=[1.000,0.880,0.880]
+22:53:36 [INFO] exp 05 sub 2 | train_fitness media=63.8396 mediana=63.7778 std=1.09683 | test_fitness media=63.4486 mediana=63.3898 std=1.0686
+22:53:36 [INFO] exp 05 sub 2 | resultado DE: best_fitness=63.77778244 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993073, -1.000000, 1.000000, 1.000000]
+22:53:36 [INFO] == experimento 05 | accuracy OOF=0.9133 | train_fitness media=63.7383 mediana=63.7778 std=1.08239 | test_fitness media=63.9038 mediana=64.3027 std=1.162
+22:56:43 [INFO] exp 06 sub 1 | generaciones=1001 | final_F=63.006447 cum=63151.79 mean=63.088701 | AFR=[0.0080,0.0136,0.0159] SDFR=[0.0003,0.0008,0.0013] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.917,0.885]
+22:56:43 [INFO] exp 06 sub 1 | train_fitness media=63.0887 mediana=63.0064 std=1.48949 | test_fitness media=64.2632 mediana=64.1706 std=1.63315
+22:56:43 [INFO] exp 06 sub 1 | resultado DE: best_fitness=63.00644684 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993164, -1.000000, 1.000000, 1.000000]
+22:56:43 [INFO] exp 06 sub 2 | generaciones=1001 | final_F=64.104790 cum=64258.86 mean=64.194664 | AFR=[0.0081,0.0134,0.0159] SDFR=[0.0004,0.0009,0.0009] | train_acc=0.9333 acc=0.9200 macroP=0.9200 | P[set,ver,vir]=[1.000,0.880,0.880]
+22:56:43 [INFO] exp 06 sub 2 | train_fitness media=64.1947 mediana=64.1048 std=1.63459 | test_fitness media=63.2773 mediana=63.1975 std=1.47952
+22:56:43 [INFO] exp 06 sub 2 | resultado DE: best_fitness=64.10478973 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991560, -1.000000, 1.000000, 1.000000]
+22:56:44 [INFO] == experimento 06 | accuracy OOF=0.9267 | train_fitness media=63.6417 mediana=64.1048 std=1.65862 | test_fitness media=63.7702 mediana=64.1706 std=1.63434
+22:59:51 [INFO] exp 07 sub 1 | generaciones=1001 | final_F=63.518692 cum=63620.17 mean=63.556613 | AFR=[0.0082,0.0135,0.0160] SDFR=[0.0003,0.0009,0.0012] | train_acc=0.9333 acc=0.9200 macroP=0.9200 | P[set,ver,vir]=[1.000,0.880,0.880]
+22:59:51 [INFO] exp 07 sub 1 | train_fitness media=63.5566 mediana=63.5187 std=0.885833 | test_fitness media=64.8061 mediana=64.7691 std=0.858918
+22:59:51 [INFO] exp 07 sub 1 | resultado DE: best_fitness=63.51869202 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -1.000000, 1.000000, 1.000000]
+22:59:51 [INFO] exp 07 sub 2 | generaciones=1001 | final_F=64.170624 cum=64277.95 mean=64.213732 | AFR=[0.0082,0.0137,0.0160] SDFR=[0.0004,0.0008,0.0010] | train_acc=0.9067 acc=0.9600 macroP=0.9605 | P[set,ver,vir]=[1.000,0.923,0.958]
+22:59:51 [INFO] exp 07 sub 2 | train_fitness media=64.2137 mediana=64.1706 std=0.885811 | test_fitness media=63.8761 mediana=63.8431 std=0.872938
+22:59:51 [INFO] exp 07 sub 2 | resultado DE: best_fitness=64.17062378 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.948359, 1.000000, 1.000000]
+22:59:51 [INFO] == experimento 07 | accuracy OOF=0.9400 | train_fitness media=63.8852 mediana=64.1706 std=0.944792 | test_fitness media=64.3411 mediana=64.7691 std=0.982909
+23:02:58 [INFO] exp 08 sub 1 | generaciones=1001 | final_F=62.690220 cum=62802.96 mean=62.740218 | AFR=[0.0081,0.0133,0.0161] SDFR=[0.0004,0.0008,0.0010] | train_acc=0.9600 acc=0.8800 macroP=0.8831 | P[set,ver,vir]=[1.000,0.864,0.786]
+23:02:58 [INFO] exp 08 sub 1 | train_fitness media=62.7402 mediana=62.6902 std=0.924608 | test_fitness media=65.2921 mediana=65.2426 std=0.936038
+23:02:58 [INFO] exp 08 sub 1 | resultado DE: best_fitness=62.69021988 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.983602, 1.000000, 1.000000]
+23:02:58 [INFO] exp 08 sub 2 | generaciones=1001 | final_F=64.702271 cum=64836.38 mean=64.771606 | AFR=[0.0080,0.0137,0.0158] SDFR=[0.0004,0.0009,0.0012] | train_acc=0.8800 acc=0.9733 macroP=0.9753 | P[set,ver,vir]=[1.000,0.926,1.000]
+23:02:58 [INFO] exp 08 sub 2 | train_fitness media=64.7716 mediana=64.7023 std=1.04326 | test_fitness media=62.568 mediana=62.5021 std=1.00369
+23:02:58 [INFO] exp 08 sub 2 | resultado DE: best_fitness=64.70227051 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993160, -1.000000, 1.000000, 1.000000]
+23:02:59 [INFO] == experimento 08 | accuracy OOF=0.9267 | train_fitness media=63.7559 mediana=64.7023 std=1.41537 | test_fitness media=63.9301 mediana=65.2086 std=1.6724
+23:06:06 [INFO] exp 09 sub 1 | generaciones=1001 | final_F=64.104645 cum=64220.55 mean=64.156391 | AFR=[0.0080,0.0136,0.0158] SDFR=[0.0003,0.0008,0.0010] | train_acc=0.9067 acc=0.9467 macroP=0.9467 | P[set,ver,vir]=[1.000,0.920,0.920]
+23:06:06 [INFO] exp 09 sub 1 | train_fitness media=64.1564 mediana=64.1046 std=1.04605 | test_fitness media=63.118 mediana=63.0701 std=0.991276
+23:06:06 [INFO] exp 09 sub 1 | resultado DE: best_fitness=64.10464478 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993194, -1.000000, 1.000000, 1.000000]
+23:06:06 [INFO] exp 09 sub 2 | generaciones=1001 | final_F=63.006596 cum=63114.55 mean=63.051497 | AFR=[0.0082,0.0134,0.0161] SDFR=[0.0004,0.0010,0.0012] | train_acc=0.9467 acc=0.8933 macroP=0.8948 | P[set,ver,vir]=[1.000,0.870,0.815]
+23:06:06 [INFO] exp 09 sub 2 | train_fitness media=63.0515 mediana=63.0066 std=0.879605 | test_fitness media=64.8798 mediana=64.8362 std=1.01806
+23:06:06 [INFO] exp 09 sub 2 | resultado DE: best_fitness=63.00659561 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.984315, 1.000000, 1.000000]
+23:06:07 [INFO] == experimento 09 | accuracy OOF=0.9200 | train_fitness media=63.6039 mediana=64.1046 std=1.11317 | test_fitness media=63.9989 mediana=64.7354 std=1.33622
+23:09:14 [INFO] exp 10 sub 1 | generaciones=1001 | final_F=64.369064 cum=64481.84 mean=64.417422 | AFR=[0.0081,0.0135,0.0159] SDFR=[0.0003,0.0009,0.0013] | train_acc=0.9333 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.885,0.917]
+23:09:14 [INFO] exp 10 sub 1 | train_fitness media=64.4174 mediana=64.3691 std=0.936648 | test_fitness media=64.1433 mediana=64.1047 std=0.82371
+23:09:14 [INFO] exp 10 sub 1 | resultado DE: best_fitness=64.36906433 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -1.000000, 0.984832, 1.000000]
+23:09:14 [INFO] exp 10 sub 2 | generaciones=1001 | final_F=63.325397 cum=63445.68 mean=63.382298 | AFR=[0.0080,0.0134,0.0159] SDFR=[0.0004,0.0009,0.0009] | train_acc=0.9333 acc=0.9200 macroP=0.9200 | P[set,ver,vir]=[1.000,0.880,0.880]
+23:09:14 [INFO] exp 10 sub 2 | train_fitness media=63.3823 mediana=63.3254 std=0.898379 | test_fitness media=64.1092 mediana=64.0393 std=1.01899
+23:09:14 [INFO] exp 10 sub 2 | resultado DE: best_fitness=63.32539749 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.989781, -0.995946, 1.000000, 1.000000]
+23:09:15 [INFO] == experimento 10 | accuracy OOF=0.9267 | train_fitness media=63.8999 mediana=64.3691 std=1.0536 | test_fitness media=64.1262 mediana=64.1047 std=0.926665
+23:12:19 [INFO] exp 11 sub 1 | generaciones=1001 | final_F=62.753395 cum=62834.61 mean=62.771835 | AFR=[0.0081,0.0133,0.0161] SDFR=[0.0004,0.0008,0.0012] | train_acc=0.9600 acc=0.8933 macroP=0.8933 | P[set,ver,vir]=[1.000,0.840,0.840]
+23:12:19 [INFO] exp 11 sub 1 | train_fitness media=62.7718 mediana=62.7534 std=0.37894 | test_fitness media=65.6019 mediana=65.5846 std=0.366967
+23:12:19 [INFO] exp 11 sub 1 | resultado DE: best_fitness=62.75339508 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -1.000000, 1.000000, 1.000000]
+23:12:19 [INFO] exp 11 sub 2 | generaciones=1001 | final_F=64.635078 cum=64724.71 mean=64.660051 | AFR=[0.0080,0.0137,0.0158] SDFR=[0.0004,0.0009,0.0009] | train_acc=0.9067 acc=0.9600 macroP=0.9605 | P[set,ver,vir]=[1.000,0.958,0.923]
+23:12:19 [INFO] exp 11 sub 2 | train_fitness media=64.6601 mediana=64.6351 std=0.41486 | test_fitness media=62.9627 mediana=62.9429 std=0.37104
+23:12:19 [INFO] exp 11 sub 2 | resultado DE: best_fitness=64.63507843 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.986578, -0.989864, 0.999846, 1.000000]
+23:12:20 [INFO] == experimento 11 | accuracy OOF=0.9267 | train_fitness media=63.7159 mediana=64.6351 std=1.0243 | test_fitness media=64.2823 mediana=65.5846 std=1.37025
+23:15:24 [INFO] exp 12 sub 1 | generaciones=1001 | final_F=63.133751 cum=63237.38 mean=63.174204 | AFR=[0.0082,0.0136,0.0161] SDFR=[0.0004,0.0009,0.0011] | train_acc=0.9200 acc=0.9467 macroP=0.9485 | P[set,ver,vir]=[1.000,0.889,0.957]
+23:15:24 [INFO] exp 12 sub 1 | train_fitness media=63.1742 mediana=63.1338 std=0.634026 | test_fitness media=64.6695 mediana=64.6351 std=0.613611
+23:15:24 [INFO] exp 12 sub 1 | resultado DE: best_fitness=63.13375092 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.953652, 1.000000, 1.000000]
+23:15:24 [INFO] exp 12 sub 2 | generaciones=1001 | final_F=63.908184 cum=64015.41 mean=63.951459 | AFR=[0.0081,0.0136,0.0159] SDFR=[0.0003,0.0008,0.0011] | train_acc=0.9467 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.875,0.846]
+23:15:24 [INFO] exp 12 sub 2 | train_fitness media=63.9515 mediana=63.9082 std=0.657619 | test_fitness media=63.3655 mediana=63.3256 std=0.623806
+23:15:24 [INFO] exp 12 sub 2 | resultado DE: best_fitness=63.90818405 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991841, -1.000000, 1.000000, 1.000000]
+23:15:25 [INFO] == experimento 12 | accuracy OOF=0.9267 | train_fitness media=63.5628 mediana=63.9082 std=0.753828 | test_fitness media=64.0175 mediana=64.5684 std=0.89884
+23:18:30 [INFO] exp 13 sub 1 | generaciones=1001 | final_F=61.944958 cum=62078.02 mean=62.016004 | AFR=[0.0081,0.0135,0.0162] SDFR=[0.0004,0.0008,0.0012] | train_acc=0.9333 acc=0.8933 macroP=0.8948 | P[set,ver,vir]=[1.000,0.815,0.870]
+23:18:30 [INFO] exp 13 sub 1 | train_fitness media=62.016 mediana=61.945 std=1.14534 | test_fitness media=65.9937 mediana=65.9305 std=1.12668
+23:18:30 [INFO] exp 13 sub 1 | resultado DE: best_fitness=61.94495773 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.984767, 1.000000, 1.000000]
+23:18:30 [INFO] exp 13 sub 2 | generaciones=1001 | final_F=65.242332 cum=65386.70 mean=65.321380 | AFR=[0.0081,0.0135,0.0158] SDFR=[0.0003,0.0009,0.0010] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.885,0.917]
+23:18:30 [INFO] exp 13 sub 2 | train_fitness media=65.3214 mediana=65.2423 std=1.21889 | test_fitness media=62.1418 mediana=62.068 std=1.18861
+23:18:30 [INFO] exp 13 sub 2 | resultado DE: best_fitness=65.24233246 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994355, -1.000000, 1.000000, 1.000000]
+23:18:31 [INFO] == experimento 13 | accuracy OOF=0.9133 | train_fitness media=63.6687 mediana=65.2423 std=2.03227 | test_fitness media=64.0678 mediana=65.9305 std=2.2473
+23:21:39 [INFO] exp 14 sub 1 | generaciones=1001 | final_F=63.325283 cum=63457.86 mean=63.394469 | AFR=[0.0083,0.0137,0.0162] SDFR=[0.0003,0.0008,0.0010] | train_acc=0.9600 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.846,0.875]
+23:21:39 [INFO] exp 14 sub 1 | train_fitness media=63.3945 mediana=63.3253 std=1.45726 | test_fitness media=64.5672 mediana=64.502 std=1.56818
+23:21:39 [INFO] exp 14 sub 1 | resultado DE: best_fitness=63.32528305 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.949199, 1.000000, 1.000000]
+23:21:39 [INFO] exp 14 sub 2 | generaciones=1001 | final_F=63.778088 cum=63908.07 mean=63.844230 | AFR=[0.0080,0.0135,0.0159] SDFR=[0.0004,0.0010,0.0012] | train_acc=0.9067 acc=0.9467 macroP=0.9467 | P[set,ver,vir]=[1.000,0.920,0.920]
+23:21:39 [INFO] exp 14 sub 2 | train_fitness media=63.8442 mediana=63.7781 std=1.40643 | test_fitness media=63.5265 mediana=63.4539 std=1.54408
+23:21:39 [INFO] exp 14 sub 2 | resultado DE: best_fitness=63.77808762 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994298, -1.000000, 1.000000, 1.000000]
+23:21:40 [INFO] == experimento 14 | accuracy OOF=0.9267 | train_fitness media=63.6193 mediana=63.7781 std=1.44962 | test_fitness media=64.0469 mediana=64.171 std=1.64086
+23:24:45 [INFO] exp 15 sub 1 | generaciones=1001 | final_F=64.903648 cum=65029.65 mean=64.964686 | AFR=[0.0081,0.0132,0.0158] SDFR=[0.0004,0.0008,0.0011] | train_acc=0.9333 acc=0.9067 macroP=0.9271 | P[set,ver,vir]=[1.000,1.000,0.781]
+23:24:45 [INFO] exp 15 sub 1 | train_fitness media=64.9647 mediana=64.9036 std=1.36498 | test_fitness media=62.3833 mediana=62.3153 std=1.53254
+23:24:45 [INFO] exp 15 sub 1 | resultado DE: best_fitness=64.90364838 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993203, -1.000000, 1.000000, 1.000000]
+23:24:45 [INFO] exp 15 sub 2 | generaciones=1001 | final_F=62.502262 cum=62626.22 mean=62.563657 | AFR=[0.0083,0.0139,0.0163] SDFR=[0.0003,0.0009,0.0010] | train_acc=0.9333 acc=0.9200 macroP=0.9355 | P[set,ver,vir]=[1.000,0.806,1.000]
+23:24:45 [INFO] exp 15 sub 2 | train_fitness media=62.5637 mediana=62.5023 std=1.39009 | test_fitness media=65.5689 mediana=65.5159 std=1.40757
+23:24:45 [INFO] exp 15 sub 2 | resultado DE: best_fitness=62.50226212 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.946776, 1.000000, 1.000000]
+23:24:46 [INFO] == experimento 15 | accuracy OOF=0.9133 | train_fitness media=63.7642 mediana=64.9036 std=1.82729 | test_fitness media=63.9761 mediana=65.3105 std=2.16842
+23:27:50 [INFO] exp 16 sub 1 | generaciones=1001 | final_F=63.777584 cum=63866.71 mean=63.802905 | AFR=[0.0081,0.0136,0.0160] SDFR=[0.0004,0.0008,0.0009] | train_acc=0.9600 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.846,0.875]
+23:27:50 [INFO] exp 16 sub 1 | train_fitness media=63.8029 mediana=63.7776 std=0.53207 | test_fitness media=64.0064 mediana=63.9739 std=0.574284
+23:27:50 [INFO] exp 16 sub 1 | resultado DE: best_fitness=63.77758408 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.953523, 1.000000, 1.000000]
+23:27:50 [INFO] exp 16 sub 2 | generaciones=1001 | final_F=63.843220 cum=63934.02 mean=63.870150 | AFR=[0.0082,0.0136,0.0160] SDFR=[0.0004,0.0010,0.0013] | train_acc=0.8800 acc=0.9467 macroP=0.9485 | P[set,ver,vir]=[1.000,0.889,0.957]
+23:27:50 [INFO] exp 16 sub 2 | train_fitness media=63.8701 mediana=63.8432 std=0.571755 | test_fitness media=64.2551 mediana=64.2364 std=0.512726
+23:27:50 [INFO] exp 16 sub 2 | resultado DE: best_fitness=63.84321976 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.992857, 1.000000, 1.000000]
+23:27:51 [INFO] == experimento 16 | accuracy OOF=0.9267 | train_fitness media=63.8365 mediana=63.8432 std=0.553292 | test_fitness media=64.1308 mediana=64.039 std=0.55839
+23:30:56 [INFO] exp 17 sub 1 | generaciones=1001 | final_F=63.777805 cum=63881.35 mean=63.817529 | AFR=[0.0083,0.0139,0.0161] SDFR=[0.0004,0.0007,0.0012] | train_acc=0.9333 acc=0.9200 macroP=0.9355 | P[set,ver,vir]=[1.000,0.806,1.000]
+23:30:56 [INFO] exp 17 sub 1 | train_fitness media=63.8175 mediana=63.7778 std=1.0955 | test_fitness media=64.0115 mediana=63.9736 std=1.09403
+23:30:56 [INFO] exp 17 sub 1 | resultado DE: best_fitness=63.77780533 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.955368, 1.000000, 1.000000]
+23:30:56 [INFO] exp 17 sub 2 | generaciones=1001 | final_F=63.647789 cum=63754.88 mean=63.691190 | AFR=[0.0080,0.0132,0.0158] SDFR=[0.0003,0.0009,0.0010] | train_acc=0.9467 acc=0.8933 macroP=0.9072 | P[set,ver,vir]=[1.000,0.947,0.774]
+23:30:56 [INFO] exp 17 sub 2 | train_fitness media=63.6912 mediana=63.6478 std=1.10575 | test_fitness media=63.8821 mediana=63.8429 std=1.09332
+23:30:56 [INFO] exp 17 sub 2 | resultado DE: best_fitness=63.647789 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.987423, -0.990926, 1.000000, 1.000000]
+23:30:57 [INFO] == experimento 17 | accuracy OOF=0.9067 | train_fitness media=63.7544 mediana=63.7778 std=1.10245 | test_fitness media=63.9468 mediana=63.9736 std=1.09559
+23:34:02 [INFO] exp 18 sub 1 | generaciones=1001 | final_F=64.501602 cum=64600.95 mean=64.536411 | AFR=[0.0081,0.0133,0.0159] SDFR=[0.0003,0.0008,0.0010] | train_acc=0.9733 acc=0.8800 macroP=0.8803 | P[set,ver,vir]=[1.000,0.833,0.808]
+23:34:02 [INFO] exp 18 sub 1 | train_fitness media=64.5364 mediana=64.5016 std=0.76024 | test_fitness media=62.8541 mediana=62.8166 std=0.827603
+23:34:02 [INFO] exp 18 sub 1 | resultado DE: best_fitness=64.50160217 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.995171, -1.000000, 0.999715, 1.000000]
+23:34:02 [INFO] exp 18 sub 2 | generaciones=1001 | final_F=63.070152 cum=63164.75 mean=63.101648 | AFR=[0.0081,0.0137,0.0160] SDFR=[0.0004,0.0009,0.0012] | train_acc=0.8933 acc=0.9333 macroP=0.9372 | P[set,ver,vir]=[1.000,0.857,0.955]
+23:34:02 [INFO] exp 18 sub 2 | train_fitness media=63.1016 mediana=63.0702 std=0.816732 | test_fitness media=65.0657 mediana=65.0385 std=0.738507
+23:34:02 [INFO] exp 18 sub 2 | resultado DE: best_fitness=63.07015228 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.988574, 1.000000, 1.000000]
+23:34:03 [INFO] == experimento 18 | accuracy OOF=0.9067 | train_fitness media=63.819 mediana=64.5016 std=1.06637 | test_fitness media=63.9599 mediana=65.0385 std=1.35572
+23:37:08 [INFO] exp 19 sub 1 | generaciones=1001 | final_F=62.816177 cum=62922.16 mean=62.859302 | AFR=[0.0083,0.0136,0.0163] SDFR=[0.0004,0.0009,0.0008] | train_acc=0.9467 acc=0.9200 macroP=0.9216 | P[set,ver,vir]=[1.000,0.852,0.913]
+23:37:08 [INFO] exp 19 sub 1 | train_fitness media=62.8593 mediana=62.8162 std=1.18581 | test_fitness media=65.2123 mediana=65.1745 std=1.17324
+23:37:08 [INFO] exp 19 sub 1 | resultado DE: best_fitness=62.81617737 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.946787, 1.000000, 1.000000]
+23:37:08 [INFO] exp 19 sub 2 | generaciones=1001 | final_F=65.106651 cum=65211.21 mean=65.146061 | AFR=[0.0081,0.0135,0.0158] SDFR=[0.0003,0.0009,0.0013] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.917,0.885]
+23:37:08 [INFO] exp 19 sub 2 | train_fitness media=65.1461 mediana=65.1067 std=1.17537 | test_fitness media=63.2351 mediana=63.1972 std=1.17303
+23:37:08 [INFO] exp 19 sub 2 | resultado DE: best_fitness=65.10665131 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -1.000000, 0.990860, 1.000000]
+23:37:09 [INFO] == experimento 19 | accuracy OOF=0.9267 | train_fitness media=64.0027 mediana=65.1067 std=1.64351 | test_fitness media=64.2237 mediana=64.9714 std=1.53413
+23:40:15 [INFO] exp 20 sub 1 | generaciones=1001 | final_F=64.836319 cum=64952.79 mean=64.887904 | AFR=[0.0080,0.0134,0.0158] SDFR=[0.0003,0.0009,0.0011] | train_acc=0.9067 acc=0.9333 macroP=0.9372 | P[set,ver,vir]=[1.000,0.955,0.857]
+23:40:15 [INFO] exp 20 sub 1 | train_fitness media=64.8879 mediana=64.8363 std=1.05213 | test_fitness media=62.4265 mediana=62.3776 std=0.976372
+23:40:15 [INFO] exp 20 sub 1 | resultado DE: best_fitness=64.83631897 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993085, -1.000000, 1.000000, 0.999717]
+23:40:15 [INFO] exp 20 sub 2 | generaciones=1001 | final_F=62.627583 cum=62731.72 mean=62.669054 | AFR=[0.0082,0.0137,0.0162] SDFR=[0.0004,0.0008,0.0011] | train_acc=0.9467 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.828,0.952]
+23:40:15 [INFO] exp 20 sub 2 | train_fitness media=62.6691 mediana=62.6276 std=0.964472 | test_fitness media=65.2241 mediana=65.1744 std=1.03763
+23:40:15 [INFO] exp 20 sub 2 | resultado DE: best_fitness=62.62758255 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.954343, 0.999572, 1.000000]
+23:40:16 [INFO] == experimento 20 | accuracy OOF=0.9267 | train_fitness media=63.7785 mediana=64.8363 std=1.49981 | test_fitness media=63.8253 mediana=65.1744 std=1.72385
+23:43:20 [INFO] exp 21 sub 1 | generaciones=1001 | final_F=62.502304 cum=62612.73 mean=62.550184 | AFR=[0.0080,0.0136,0.0160] SDFR=[0.0004,0.0009,0.0010] | train_acc=0.9467 acc=0.9067 macroP=0.9271 | P[set,ver,vir]=[1.000,0.781,1.000]
+23:43:20 [INFO] exp 21 sub 1 | train_fitness media=62.5502 mediana=62.5023 std=1.07395 | test_fitness media=64.8162 mediana=64.7691 std=1.08876
+23:43:20 [INFO] exp 21 sub 1 | resultado DE: best_fitness=62.50230408 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991640, -1.000000, 1.000000, 1.000000]
+23:43:20 [INFO] exp 21 sub 2 | generaciones=1001 | final_F=64.635239 cum=64749.46 mean=64.684780 | AFR=[0.0080,0.0134,0.0158] SDFR=[0.0003,0.0009,0.0012] | train_acc=0.9200 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.952,0.828]
+23:43:20 [INFO] exp 21 sub 2 | train_fitness media=64.6848 mediana=64.6352 std=1.09431 | test_fitness media=62.6739 mediana=62.6276 std=1.06883
+23:43:20 [INFO] exp 21 sub 2 | resultado DE: best_fitness=64.63523865 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994280, -1.000000, 1.000000, 1.000000]
+23:43:21 [INFO] == experimento 21 | accuracy OOF=0.9133 | train_fitness media=63.6175 mediana=64.6352 std=1.52137 | test_fitness media=63.7451 mediana=64.7691 std=1.52029
+23:46:26 [INFO] exp 22 sub 1 | generaciones=1001 | final_F=62.067848 cum=62145.30 mean=62.083218 | AFR=[0.0079,0.0135,0.0159] SDFR=[0.0003,0.0008,0.0012] | train_acc=0.9333 acc=0.9200 macroP=0.9216 | P[set,ver,vir]=[1.000,0.913,0.852]
+23:46:26 [INFO] exp 22 sub 1 | train_fitness media=62.0832 mediana=62.0678 std=0.281226 | test_fitness media=65.3271 mediana=65.3105 std=0.333779
+23:46:26 [INFO] exp 22 sub 1 | resultado DE: best_fitness=62.06784821 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991475, -1.000000, 1.000000, 1.000000]
+23:46:26 [INFO] exp 22 sub 2 | generaciones=1001 | final_F=65.174370 cum=65257.49 mean=65.192294 | AFR=[0.0082,0.0135,0.0159] SDFR=[0.0003,0.0010,0.0011] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.885,0.917]
+23:46:26 [INFO] exp 22 sub 2 | train_fitness media=65.1923 mediana=65.1744 std=0.340297 | test_fitness media=62.0826 mediana=62.0678 std=0.281111
+23:46:26 [INFO] exp 22 sub 2 | resultado DE: best_fitness=65.17436981 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993008, -1.000000, 1.000000, 1.000000]
+23:46:27 [INFO] == experimento 22 | accuracy OOF=0.9267 | train_fitness media=63.6378 mediana=65.1744 std=1.58557 | test_fitness media=63.7049 mediana=65.3105 std=1.65135
+23:49:32 [INFO] exp 23 sub 1 | generaciones=1001 | final_F=63.973511 cum=64124.61 mean=64.060548 | AFR=[0.0080,0.0135,0.0159] SDFR=[0.0004,0.0009,0.0009] | train_acc=0.9467 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.875,0.846]
+23:49:32 [INFO] exp 23 sub 1 | train_fitness media=64.0605 mediana=63.9735 std=1.36284 | test_fitness media=63.4087 mediana=63.3256 std=1.31203
+23:49:32 [INFO] exp 23 sub 1 | resultado DE: best_fitness=63.97351074 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.992091, -1.000000, 1.000000, 0.999868]
+23:49:32 [INFO] exp 23 sub 2 | generaciones=1001 | final_F=63.261547 cum=63406.52 mean=63.343177 | AFR=[0.0083,0.0137,0.0162] SDFR=[0.0003,0.0008,0.0013] | train_acc=0.9200 acc=0.9467 macroP=0.9485 | P[set,ver,vir]=[1.000,0.889,0.957]
+23:49:32 [INFO] exp 23 sub 2 | train_fitness media=63.3432 mediana=63.2615 std=1.31582 | test_fitness media=64.6465 mediana=64.5683 std=1.32715
+23:49:32 [INFO] exp 23 sub 2 | resultado DE: best_fitness=63.26154709 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.949027, 1.000000, 0.999877]
+23:49:33 [INFO] == experimento 23 | accuracy OOF=0.9267 | train_fitness media=63.7019 mediana=63.9735 std=1.38673 | test_fitness media=64.0276 mediana=64.5017 std=1.45754
+23:52:40 [INFO] exp 24 sub 1 | generaciones=1001 | final_F=63.518581 cum=63643.82 mean=63.580236 | AFR=[0.0080,0.0134,0.0159] SDFR=[0.0003,0.0010,0.0010] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.917,0.885]
+23:52:40 [INFO] exp 24 sub 1 | train_fitness media=63.5802 mediana=63.5186 std=1.2514 | test_fitness media=63.7755 mediana=63.7128 std=1.24883
+23:52:40 [INFO] exp 24 sub 1 | resultado DE: best_fitness=63.51858139 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994520, -1.000000, 1.000000, 1.000000]
+23:52:40 [INFO] exp 24 sub 2 | generaciones=1001 | final_F=63.583176 cum=63709.27 mean=63.645620 | AFR=[0.0081,0.0136,0.0159] SDFR=[0.0004,0.0007,0.0012] | train_acc=0.9333 acc=0.9200 macroP=0.9200 | P[set,ver,vir]=[1.000,0.880,0.880]
+23:52:40 [INFO] exp 24 sub 2 | train_fitness media=63.6456 mediana=63.5832 std=1.2522 | test_fitness media=63.647 mediana=63.5832 std=1.24853
+23:52:40 [INFO] exp 24 sub 2 | resultado DE: best_fitness=63.58317566 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993122, -1.000000, 1.000000, 1.000000]
+23:52:41 [INFO] == experimento 24 | accuracy OOF=0.9267 | train_fitness media=63.6129 mediana=63.5832 std=1.25223 | test_fitness media=63.7113 mediana=63.7128 std=1.25033
+23:55:48 [INFO] exp 25 sub 1 | generaciones=1001 | final_F=62.067749 cum=62211.95 mean=62.149796 | AFR=[0.0080,0.0134,0.0161] SDFR=[0.0004,0.0008,0.0011] | train_acc=0.9467 acc=0.9067 macroP=0.9102 | P[set,ver,vir]=[1.000,0.909,0.821]
+23:55:48 [INFO] exp 25 sub 1 | train_fitness media=62.1498 mediana=62.0677 std=1.41032 | test_fitness media=65.4044 mediana=65.3106 std=1.56326
+23:55:48 [INFO] exp 25 sub 1 | resultado DE: best_fitness=62.06774902 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.992374, -1.000000, 1.000000, 1.000000]
+23:55:48 [INFO] exp 25 sub 2 | generaciones=1001 | final_F=65.174492 cum=65319.54 mean=65.254283 | AFR=[0.0080,0.0136,0.0157] SDFR=[0.0004,0.0010,0.0011] | train_acc=0.9067 acc=0.9467 macroP=0.9485 | P[set,ver,vir]=[1.000,0.889,0.957]
+23:55:48 [INFO] exp 25 sub 2 | train_fitness media=65.2543 mediana=65.1745 std=1.47344 | test_fitness media=62.1508 mediana=62.0677 std=1.57382
+23:55:48 [INFO] exp 25 sub 2 | resultado DE: best_fitness=65.17449188 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993051, -1.000000, 1.000000, 1.000000]
+23:55:49 [INFO] == experimento 25 | accuracy OOF=0.9267 | train_fitness media=63.702 mediana=65.1745 std=2.11884 | test_fitness media=63.7776 mediana=65.2766 std=2.25982
+23:58:56 [INFO] exp 26 sub 1 | generaciones=1001 | final_F=63.197289 cum=63298.82 mean=63.235583 | AFR=[0.0081,0.0137,0.0160] SDFR=[0.0003,0.0008,0.0010] | train_acc=0.9467 acc=0.9067 macroP=0.9271 | P[set,ver,vir]=[1.000,0.781,1.000]
+23:58:56 [INFO] exp 26 sub 1 | train_fitness media=63.2356 mediana=63.1973 std=0.906799 | test_fitness media=64.0787 mediana=64.0393 std=0.898288
+23:58:56 [INFO] exp 26 sub 1 | resultado DE: best_fitness=63.19728851 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991892, -1.000000, 1.000000, 1.000000]
+23:58:56 [INFO] exp 26 sub 2 | generaciones=1001 | final_F=63.908424 cum=64018.88 mean=63.954926 | AFR=[0.0080,0.0133,0.0159] SDFR=[0.0004,0.0009,0.0012] | train_acc=0.9467 acc=0.8933 macroP=0.9072 | P[set,ver,vir]=[1.000,0.947,0.774]
+23:58:56 [INFO] exp 26 sub 2 | train_fitness media=63.9549 mediana=63.9084 std=0.905273 | test_fitness media=63.3695 mediana=63.3254 std=0.904403
+23:58:56 [INFO] exp 26 sub 2 | resultado DE: best_fitness=63.90842438 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994343, -1.000000, 1.000000, 1.000000]
+23:58:57 [INFO] == experimento 26 | accuracy OOF=0.9000 | train_fitness media=63.5953 mediana=63.9084 std=0.974816 | test_fitness media=63.7241 mediana=63.9738 std=0.968593
+00:02:04 [INFO] exp 27 sub 1 | generaciones=1001 | final_F=65.106468 cum=65278.75 mean=65.213532 | AFR=[0.0081,0.0133,0.0158] SDFR=[0.0004,0.0008,0.0011] | train_acc=0.9467 acc=0.8933 macroP=0.9072 | P[set,ver,vir]=[1.000,0.947,0.774]
+00:02:04 [INFO] exp 27 sub 1 | train_fitness media=65.2135 mediana=65.1065 std=1.57998 | test_fitness media=62.3493 mediana=62.2532 std=1.52121
+00:02:04 [INFO] exp 27 sub 1 | resultado DE: best_fitness=65.1064682 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991490, -1.000000, 0.999912, 1.000000]
+00:02:04 [INFO] exp 27 sub 2 | generaciones=1001 | final_F=62.006287 cum=62168.74 mean=62.106634 | AFR=[0.0080,0.0137,0.0160] SDFR=[0.0003,0.0009,0.0011] | train_acc=0.9467 acc=0.9200 macroP=0.9355 | P[set,ver,vir]=[1.000,0.806,1.000]
+00:02:04 [INFO] exp 27 sub 2 | train_fitness media=62.1066 mediana=62.0063 std=1.53666 | test_fitness media=65.4122 mediana=65.3106 std=1.56736
+00:02:04 [INFO] exp 27 sub 2 | resultado DE: best_fitness=62.00628662 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.994359, -1.000000, 1.000000, 1.000000]
+00:02:05 [INFO] == experimento 27 | accuracy OOF=0.9067 | train_fitness media=63.6601 mediana=65.1065 std=2.20046 | test_fitness media=63.8808 mediana=65.3106 std=2.17499
+00:05:16 [INFO] exp 28 sub 1 | generaciones=1001 | final_F=62.690464 cum=62822.81 mean=62.760054 | AFR=[0.0080,0.0133,0.0160] SDFR=[0.0004,0.0008,0.0013] | train_acc=0.9600 acc=0.8933 macroP=0.8948 | P[set,ver,vir]=[1.000,0.870,0.815]
+00:05:16 [INFO] exp 28 sub 1 | train_fitness media=62.7601 mediana=62.6905 std=1.2733 | test_fitness media=64.5764 mediana=64.5017 std=1.38553
+00:05:16 [INFO] exp 28 sub 1 | resultado DE: best_fitness=62.69046402 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993021, -1.000000, 1.000000, 1.000000]
+00:05:16 [INFO] exp 28 sub 2 | generaciones=1001 | final_F=64.501678 cum=64637.20 mean=64.572624 | AFR=[0.0080,0.0136,0.0158] SDFR=[0.0004,0.0009,0.0009] | train_acc=0.8933 acc=0.9600 macroP=0.9605 | P[set,ver,vir]=[1.000,0.923,0.958]
+00:05:16 [INFO] exp 28 sub 2 | train_fitness media=64.5726 mediana=64.5017 std=1.38489 | test_fitness media=62.8807 mediana=62.8164 std=1.26622
+00:05:16 [INFO] exp 28 sub 2 | resultado DE: best_fitness=64.50167847 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.992019, -1.000000, 1.000000, 1.000000]
+00:05:17 [INFO] == experimento 28 | accuracy OOF=0.9267 | train_fitness media=63.6663 mediana=64.5017 std=1.60965 | test_fitness media=63.7285 mediana=64.5017 std=1.57491
+00:08:26 [INFO] exp 29 sub 1 | generaciones=1001 | final_F=64.302620 cum=64391.93 mean=64.327603 | AFR=[0.0080,0.0132,0.0158] SDFR=[0.0004,0.0007,0.0011] | train_acc=0.9467 acc=0.8933 macroP=0.9192 | P[set,ver,vir]=[1.000,1.000,0.758]
+00:08:26 [INFO] exp 29 sub 1 | train_fitness media=64.3276 mediana=64.3026 std=0.627406 | test_fitness media=63.0321 mediana=63.0063 std=0.711419
+00:08:26 [INFO] exp 29 sub 1 | resultado DE: best_fitness=64.30261993 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.992364, -1.000000, 1.000000, 1.000000]
+00:08:26 [INFO] exp 29 sub 2 | generaciones=1001 | final_F=63.325489 cum=63410.99 mean=63.347642 | AFR=[0.0082,0.0139,0.0161] SDFR=[0.0003,0.0010,0.0011] | train_acc=0.8933 acc=0.9333 macroP=0.9444 | P[set,ver,vir]=[1.000,0.833,1.000]
+00:08:26 [INFO] exp 29 sub 2 | train_fitness media=63.3476 mediana=63.3255 std=0.700533 | test_fitness media=64.7885 mediana=64.7691 std=0.611299
+00:08:26 [INFO] exp 29 sub 2 | resultado DE: best_fitness=63.32548904 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.989557, 1.000000, 1.000000]
+00:08:27 [INFO] == experimento 29 | accuracy OOF=0.9133 | train_fitness media=63.8376 mediana=64.3026 std=0.825998 | test_fitness media=63.9103 mediana=64.7691 std=1.1005
+00:11:38 [INFO] exp 30 sub 1 | generaciones=1001 | final_F=63.006313 cum=63102.27 mean=63.039233 | AFR=[0.0080,0.0135,0.0159] SDFR=[0.0003,0.0009,0.0010] | train_acc=0.9467 acc=0.8933 macroP=0.8993 | P[set,ver,vir]=[1.000,0.905,0.793]
+00:11:38 [INFO] exp 30 sub 1 | train_fitness media=63.0392 mediana=63.0063 std=0.733261 | test_fitness media=64.8723 mediana=64.8365 std=0.805672
+00:11:38 [INFO] exp 30 sub 1 | resultado DE: best_fitness=63.00631332 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.984640, 1.000000, 1.000000]
+00:11:38 [INFO] exp 30 sub 2 | generaciones=1001 | final_F=64.302834 cum=64409.21 mean=64.344865 | AFR=[0.0082,0.0136,0.0159] SDFR=[0.0003,0.0009,0.0012] | train_acc=0.9067 acc=0.9467 macroP=0.9485 | P[set,ver,vir]=[1.000,0.889,0.957]
+00:11:38 [INFO] exp 30 sub 2 | train_fitness media=64.3449 mediana=64.3028 std=0.829639 | test_fitness media=62.9126 mediana=62.8795 std=0.738608
+00:11:38 [INFO] exp 30 sub 2 | resultado DE: best_fitness=64.30283356 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993104, -1.000000, 1.000000, 1.000000]
+00:11:39 [INFO] == experimento 30 | accuracy OOF=0.9200 | train_fitness media=63.692 mediana=64.3028 std=1.01939 | test_fitness media=63.8925 mediana=64.8365 std=1.24799
+00:14:48 [INFO] exp 31 sub 1 | generaciones=1001 | final_F=63.973942 cum=64070.49 mean=64.006483 | AFR=[0.0081,0.0135,0.0159] SDFR=[0.0003,0.0009,0.0013] | train_acc=0.8933 acc=0.9600 macroP=0.9643 | P[set,ver,vir]=[1.000,1.000,0.893]
+00:14:48 [INFO] exp 31 sub 1 | train_fitness media=64.0065 mediana=63.9739 std=0.500742 | test_fitness media=63.2292 mediana=63.1972 std=0.50561
+00:14:48 [INFO] exp 31 sub 1 | resultado DE: best_fitness=63.9739418 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.993158, -1.000000, 1.000000, 1.000000]
+00:14:48 [INFO] exp 31 sub 2 | generaciones=1001 | final_F=63.197170 cum=63291.17 mean=63.227939 | AFR=[0.0080,0.0135,0.0159] SDFR=[0.0004,0.0008,0.0008] | train_acc=0.9600 acc=0.8933 macroP=0.8948 | P[set,ver,vir]=[1.000,0.815,0.870]
+00:14:48 [INFO] exp 31 sub 2 | train_fitness media=63.2279 mediana=63.1972 std=0.50534 | test_fitness media=64.265 mediana=64.2369 std=0.485841
+00:14:48 [INFO] exp 31 sub 2 | resultado DE: best_fitness=63.19717026 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.988341, -0.992451, 1.000000, 1.000000]
+00:14:49 [INFO] == experimento 31 | accuracy OOF=0.9267 | train_fitness media=63.6172 mediana=63.9739 std=0.636073 | test_fitness media=63.7471 mediana=64.2369 std=0.716979
+00:17:54 [INFO] exp 32 sub 1 | generaciones=1001 | final_F=65.653755 cum=65765.45 mean=65.699749 | AFR=[0.0080,0.0133,0.0156] SDFR=[0.0004,0.0010,0.0011] | train_acc=0.9200 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.952,0.828]
+00:17:54 [INFO] exp 32 sub 1 | train_fitness media=65.6997 mediana=65.6538 std=0.782263 | test_fitness media=61.6907 mediana=61.6391 std=0.791528
+00:17:54 [INFO] exp 32 sub 1 | resultado DE: best_fitness=65.65375519 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.992666, -0.999401, 1.000000, 1.000000]
+00:17:54 [INFO] exp 32 sub 2 | generaciones=1001 | final_F=61.639103 cum=61743.73 mean=61.682051 | AFR=[0.0081,0.0137,0.0162] SDFR=[0.0003,0.0007,0.0010] | train_acc=0.9467 acc=0.9067 macroP=0.9271 | P[set,ver,vir]=[1.000,0.781,1.000]
+00:17:54 [INFO] exp 32 sub 2 | train_fitness media=61.6821 mediana=61.6391 std=0.779643 | test_fitness media=65.7651 mediana=65.7227 std=0.772963
+00:17:54 [INFO] exp 32 sub 2 | resultado DE: best_fitness=61.63910294 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991854, -1.000000, 1.000000, 1.000000]
+00:17:55 [INFO] == experimento 32 | accuracy OOF=0.9133 | train_fitness media=63.6909 mediana=65.6538 std=2.15531 | test_fitness media=63.7279 mediana=65.7227 std=2.18224
+00:21:01 [INFO] exp 33 sub 1 | generaciones=1001 | final_F=64.836525 cum=64927.45 mean=64.862586 | AFR=[0.0081,0.0135,0.0158] SDFR=[0.0004,0.0009,0.0012] | train_acc=0.9067 acc=0.9333 macroP=0.9372 | P[set,ver,vir]=[1.000,0.955,0.857]
+00:21:01 [INFO] exp 33 sub 1 | train_fitness media=64.8626 mediana=64.8365 std=0.633081 | test_fitness media=62.988 mediana=62.9428 std=0.622591
+00:21:01 [INFO] exp 33 sub 1 | resultado DE: best_fitness=64.83652496 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.984766, 1.000000, 1.000000]
+00:21:01 [INFO] exp 33 sub 2 | generaciones=1001 | final_F=62.816223 cum=62902.63 mean=62.839791 | AFR=[0.0083,0.0137,0.0163] SDFR=[0.0003,0.0008,0.0010] | train_acc=0.9467 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.828,0.952]
+00:21:01 [INFO] exp 33 sub 2 | train_fitness media=62.8398 mediana=62.8162 std=0.620248 | test_fitness media=65.065 mediana=65.0388 std=0.626825
+00:21:01 [INFO] exp 33 sub 2 | resultado DE: best_fitness=62.81622314 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.949198, 1.000000, 1.000000]
+00:21:02 [INFO] == experimento 33 | accuracy OOF=0.9267 | train_fitness media=63.8512 mediana=64.8365 std=1.18982 | test_fitness media=64.0265 mediana=65.0388 std=1.2119
+00:24:08 [INFO] exp 34 sub 1 | generaciones=1001 | final_F=65.106270 cum=65202.35 mean=65.137212 | AFR=[0.0082,0.0136,0.0159] SDFR=[0.0004,0.0009,0.0008] | train_acc=0.9333 acc=0.9200 macroP=0.9216 | P[set,ver,vir]=[1.000,0.913,0.852]
+00:24:08 [INFO] exp 34 sub 1 | train_fitness media=65.1372 mediana=65.1063 std=0.593484 | test_fitness media=62.7202 mediana=62.6906 std=0.548285
+00:24:08 [INFO] exp 34 sub 1 | resultado DE: best_fitness=65.10626984 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.953786, 1.000000, 1.000000]
+00:24:08 [INFO] exp 34 sub 2 | generaciones=1001 | final_F=62.627728 cum=62724.99 mean=62.662327 | AFR=[0.0082,0.0137,0.0162] SDFR=[0.0003,0.0008,0.0013] | train_acc=0.9600 acc=0.9067 macroP=0.9071 | P[set,ver,vir]=[1.000,0.846,0.875]
+00:24:08 [INFO] exp 34 sub 2 | train_fitness media=62.6623 mediana=62.6277 std=0.557266 | test_fitness media=65.213 mediana=65.1742 std=0.606035
+00:24:08 [INFO] exp 34 sub 2 | resultado DE: best_fitness=62.62772751 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.955375, 1.000000, 1.000000]
+00:24:09 [INFO] == experimento 34 | accuracy OOF=0.9133 | train_fitness media=63.8998 mediana=65.1063 std=1.36479 | test_fitness media=63.9666 mediana=65.1742 std=1.37385
+00:27:14 [INFO] exp 35 sub 1 | generaciones=1001 | final_F=64.501823 cum=64626.75 mean=64.562193 | AFR=[0.0082,0.0136,0.0160] SDFR=[0.0003,0.0008,0.0012] | train_acc=0.9200 acc=0.9200 macroP=0.9267 | P[set,ver,vir]=[1.000,0.952,0.828]
+00:27:14 [INFO] exp 35 sub 1 | train_fitness media=64.5622 mediana=64.5018 std=1.18385 | test_fitness media=63.374 mediana=63.3255 std=1.12976
+00:27:14 [INFO] exp 35 sub 1 | resultado DE: best_fitness=64.50182343 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[1.000000, -0.949046, 1.000000, 1.000000]
+00:27:14 [INFO] exp 35 sub 2 | generaciones=1001 | final_F=62.690372 cum=62802.59 mean=62.739849 | AFR=[0.0081,0.0135,0.0160] SDFR=[0.0004,0.0009,0.0010] | train_acc=0.9200 acc=0.9333 macroP=0.9338 | P[set,ver,vir]=[1.000,0.885,0.917]
+00:27:14 [INFO] exp 35 sub 2 | train_fitness media=62.7398 mediana=62.6904 std=1.06634 | test_fitness media=64.6215 mediana=64.5684 std=1.16408
+00:27:14 [INFO] exp 35 sub 2 | resultado DE: best_fitness=62.69037247 evaluations=60060 generations=1000 fitness_history=1001 evaluations_history=1001 best_position_history=1001 population_history=0 best_position=[0.991839, -1.000000, 1.000000, 1.000000]
+00:27:15 [INFO] == experimento 35 | accuracy OOF=0.9267 | train_fitness media=63.651 mediana=64.5018 std=1.44897 | test_fitness media=63.9978 mediana=64.5684 std=1.30567
+00:27:16 [INFO] ===== RESUMEN GLOBAL =====
+00:27:16 [INFO] todos los experimentos | train_fitness media=63.7339 mediana=63.7129 std=1.44982 | test_fitness media=63.9591 mediana=63.9736 std=1.54345
+00:27:16 [INFO] CM global (filas=real, cols=pred):
+tensor([[1750,    0,    0],
+        [   0, 1546,  204],
+        [   0,  212, 1538]])
+00:27:16 [INFO] total predicciones=5250 | accuracy global=0.9208
+00:27:16 [INFO] accuracy media por experimento=0.9208
+00:27:16 [INFO] generaciones: min=1001 max=1001 media=1001
+00:27:16 [INFO] MEJOR modelo: exp 08 sub 2 | acc=0.9733 macroP=0.9753 -> resultados_fitness_ec5/best_model
